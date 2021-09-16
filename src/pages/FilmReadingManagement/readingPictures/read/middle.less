@@ -1,0 +1,64 @@
+.wrap{
+  display: flex;
+  height: 100%;
+  background: #222222;
+  .videoWrap{
+    width: 100%;
+    height: calc(100% - 52px);
+    text-align: center;
+    // flex: 1;
+    // display: flex;
+    // flex-direction: column;
+    position: relative;
+    .canvas{
+      // width: 90%;
+      // height: 90%;
+      position: absolute;
+      z-index: 2;
+    }
+    .video{
+      // flex: 1;
+      height: 100%;
+    }
+    .btns{
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      .icon{
+        color: #fff;
+        font-size: 30px;
+      }
+      .operation{
+        position: absolute;
+        right: 0;
+        button{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .toolWrap{
+    width: 80px;
+    border: 1px solid #eee;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    .icon{
+      margin-top: 20px;
+    }
+  }
+}
+.contentWrap{
+  .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >div{
+      width: 70px;
+    }
+    // display: flex;
+  }
+}

@@ -1,0 +1,131 @@
+.wrap{
+  background: #fff;
+  height: 100%;
+  font-size: 12px;
+  .tabs{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f5f5f5;
+    div{
+      flex: 1;
+      text-align: center;
+      padding: 8px 16px;
+      cursor: pointer;
+      &.active{
+        color: royalblue;
+        border-bottom: 3px solid #108EE9;
+      }
+    }
+  }
+  .con{
+    .bobotuWrap{
+      background: #000;
+      position: relative;
+      .tipsWrap{
+        width: 110px;
+        position: absolute;
+        bottom: 0;
+        left: 42px;
+        top: 27px;
+        background-color: rgba(243, 192, 192, 0.2);
+        display: flex;
+        flex-direction: column;
+        .bzTop{
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgba(0,0,0,0.25);
+          span{
+            flex: 1;
+            color: #fff;
+            text-align: center;
+          }
+        }
+        .bzCon{
+          flex: 1;
+          display: flex;
+          background: rgba(77,124,255,0.6); 
+          position: relative;
+          div{
+            flex: 1;
+            border-right: 1px solid rgba(255, 255, 255, .5);
+            &:last-child{
+              border: none;
+            }
+          }
+          .teat{
+            position: absolute;
+            display: block;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: red;
+            z-index: 1;
+          }
+          .teat1{
+            position: absolute;
+            display: block;
+            width: 110px;
+            height: 1px;
+            background: skyblue;
+            position: absolute;
+            left: 0;
+          }
+          .teat2{
+            position: absolute;
+            display: block;
+            width: 1px;
+            height: 157px;
+            background: skyblue;
+            position: absolute;
+            top: 0;
+          }
+          .speed{
+            height: 2px;
+            background: #00CC66;
+            position: absolute;
+          }
+        }
+      }
+    }
+    .buttonGroup{
+      border-top: 1px solid #f6faff;
+      border-bottom: 1px solid #f6faff;
+      background: linear-gradient(rgb(255, 255, 255),rgb(246, 250, 255));
+      display: flex;
+      span{
+        cursor: pointer;
+        flex: 1;
+        display: flex;
+        padding: 10px 0;
+        justify-content: center;
+        align-items: center;
+        .icon{
+          margin-right: 5px;
+        }
+      }
+    }
+    .address{
+      padding: 5px 10px;
+    }
+    .bzWrap{
+      .bzTitle{
+        border-top: 1px solid #f6faff;
+        border-bottom: 1px solid #f6faff;
+        padding: 8px;
+        background: linear-gradient(rgb(255, 255, 255),rgb(246, 250, 255));
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.mr5{
+  margin-right: 5px;
+}
+p{
+  margin-bottom: 0;
+}

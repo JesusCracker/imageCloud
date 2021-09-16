@@ -1,0 +1,105 @@
+@import '~antd/lib/style/themes/default.less';
+//@import '~@/utils/utils.less';
+
+.avatarHolder {
+  text-align: center;
+  margin-bottom: 24px;
+
+  & > img {
+    width: 104px;
+    height: 104px;
+    margin-bottom: 20px;
+  }
+
+  .name {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    color: @heading-color;
+    margin-bottom: 4px;
+  }
+}
+
+.baseInfo {
+  margin-bottom: 24px
+}
+.messageBox {
+  margin-bottom: 24px
+}
+
+.detail {
+  p {
+    margin-bottom: 10px;
+    padding-left: 26px;
+    position: relative;
+  }
+}
+
+.handleBox{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  .changeInfoBtn{
+    width: 45%;
+    height: 40px
+  }
+}
+
+.tagsTitle {
+  font-weight: 500;
+  color: @heading-color;
+  margin-bottom: 12px;
+}
+
+.tags {
+  :global {
+    .ant-tag {
+      padding: 4px 13px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.messageHeader {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  .btnBox {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .searchBox {
+    width: 40%;
+  }
+}
+.messageInfo {
+  .navHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .btnBox {
+      button {
+        margin-right: 5px;
+        &:nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .navTitle {
+    .title {
+      margin-bottom: 10px;
+    }
+    span {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+  .messageContent {
+
+  }
+}
